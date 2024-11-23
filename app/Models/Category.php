@@ -10,7 +10,7 @@ class Category extends Model
 
     public function sub_categories()
     {
-        return $this->hasMany('App\Models\Sub_Category');
+        return $this->hasMany(\App\Models\Sub_Category::class);
     }
 
     public function brands()
